@@ -10,9 +10,17 @@ export default function Home() {
       {/* Header Navigation */}
       <header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/60 backdrop-blur-md border-b border-white/10 z-[300] flex items-center">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center w-full relative z-10 gap-4">
-          <a href="#home" className="h-[40px] w-[110px] sm:h-[50px] sm:w-[150px] md:w-[200px] flex items-center justify-center overflow-hidden shrink-0">
-            <img src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0" alt="Turbolucent Logo" className="w-full h-full object-contain" />
+
+          {/* Main Logo Element Area */}
+          <a href="#home" className="h-[80px] w-[240px] flex items-center justify-center overflow-hidden shrink-0">
+            <img
+              src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0"
+              alt="Turbolucent Logo"
+              className="w-full h-full object-cover"
+            />
           </a>
+
+          {/* Navigation Items Link Matrix */}
           <nav className="hidden md:flex gap-8 text-[0.9rem] font-medium text-[#F8FAFC]/70">
             <a href="#comparison" className="hover:text-[#F8FAFC] transition-colors">ROI</a>
             <a href="#what-we-do" className="hover:text-[#F8FAFC] transition-colors">Capabilities</a>
@@ -21,12 +29,14 @@ export default function Home() {
             <a href="#architecture" className="hover:text-[#F8FAFC] transition-colors">Architecture</a>
             <a href="#blogs" className="hover:text-[#F8FAFC] transition-colors">Blogs</a>
           </nav>
+
+          {/* Booking Element Button CTA */}
           <div className="shrink-0">
             <a href="https://t.me/c/2345641452/954" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-[0.9rem] font-medium rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:bg-[#06B6D4] hover:text-[#0F172A] transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
               Book an appointment
             </a>
           </div>
-        </div> {/* <-- Added the missing closing div tag here */}
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -167,7 +177,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Terminal Tree Map */}
+        {/* Component Architecture Section */}
         <section id="architecture" className="py-24 border-t border-white/10 relative">
           <div className="max-w-[1200px] mx-auto px-8 text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Component Architecture</h2>
