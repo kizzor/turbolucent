@@ -10,7 +10,7 @@ export default function Home() {
       {/* Header Navigation */}
       <header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/60 backdrop-blur-md border-b border-white/10 z-[300] flex items-center">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center w-full relative z-10 gap-4">
-          <a href="#home" className="h-[50px] w-[150px] md:w-[200px] flex items-center justify-center overflow-hidden shrink-0">
+          <a href="#home" className="h-[40px] w-[110px] sm:h-[50px] sm:w-[150px] md:w-[200px] flex items-center justify-center overflow-hidden shrink-0">
             <img src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0" alt="Turbolucent Logo" className="w-full h-full object-contain" />
           </a>
           <nav className="hidden md:flex gap-8 text-[0.9rem] font-medium text-[#F8FAFC]/70">
@@ -26,7 +26,7 @@ export default function Home() {
               Book an appointment
             </a>
           </div>
-        </a>
+        </div> {/* <-- Added the missing closing div tag here */}
       </header>
 
       {/* Hero Section */}
