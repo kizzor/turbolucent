@@ -8,11 +8,11 @@ export default function Home() {
       <div className="fixed -bottom-[20%] -right-[10%] w-[60vw] h-[60vw] rounded-full blur-[120px] pointer-events-none opacity-35 bg-gradient-to-r from-[#67E8F9] to-transparent z-0" />
 
       {/* Header Navigation */}
-      <header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/60 backdrop-blur-md border-b border-white/10 z-[300] flex items-center md:pl-[240px]">
-        <a href="#home" className="absolute top-0 left-0 h-[80px] w-[240px] bg-white/5 border-r border-white/10 flex items-center justify-center overflow-hidden">
-          <img src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0" alt="Turbolucent Logo" className="w-full h-full object-cover" />
-        </a>
-        <div className="max-w-[1200px] mx-auto px-8 flex justify-between items-center w-full relative z-10">
+      <header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/60 backdrop-blur-md border-b border-white/10 z-[300] flex items-center">
+        <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center w-full relative z-10 gap-4">
+          <a href="#home" className="h-[50px] w-[150px] md:w-[200px] flex items-center justify-center overflow-hidden shrink-0">
+            <img src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0" alt="Turbolucent Logo" className="w-full h-full object-contain" />
+          </a>
           <nav className="hidden md:flex gap-8 text-[0.9rem] font-medium text-[#F8FAFC]/70">
             <a href="#comparison" className="hover:text-[#F8FAFC] transition-colors">ROI</a>
             <a href="#what-we-do" className="hover:text-[#F8FAFC] transition-colors">Capabilities</a>
@@ -21,12 +21,12 @@ export default function Home() {
             <a href="#architecture" className="hover:text-[#F8FAFC] transition-colors">Architecture</a>
             <a href="#blogs" className="hover:text-[#F8FAFC] transition-colors">Blogs</a>
           </nav>
-          <div className="ml-auto">
-            <a href="https://t.me/c/2345641452/954" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-6 py-2.5 text-[0.9rem] font-medium rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:bg-[#06B6D4] hover:text-[#0F172A] transition-all transform hover:-translate-y-0.5">
+          <div className="shrink-0">
+            <a href="https://t.me/c/2345641452/954" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-[0.9rem] font-medium rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:bg-[#06B6D4] hover:text-[#0F172A] transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
               Book an appointment
             </a>
           </div>
-        </div>
+        </a>
       </header>
 
       {/* Hero Section */}
