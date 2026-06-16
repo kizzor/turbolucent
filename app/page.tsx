@@ -11,7 +11,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/60 backdrop-blur-md border-b border-white/10 z-[300] flex items-center">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center w-full relative z-10 gap-4">
 
-          {/* Main Logo Element Area */}
+          {/* Logo element Area */}
           <a href="#home" className="h-[80px] w-[240px] flex items-center justify-center overflow-hidden shrink-0">
             <img
               src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0"
@@ -30,12 +30,26 @@ export default function Home() {
             <a href="#blogs" className="hover:text-[#F8FAFC] transition-colors">Blogs</a>
           </nav>
 
-          {/* Booking Element Button CTA */}
-          <div className="shrink-0">
-            <a href="https://t.me/c/2345641452/954" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-[0.9rem] font-medium rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:bg-[#06B6D4] hover:text-[#0F172A] transition-all transform hover:-translate-y-0.5 whitespace-nowrap">
-              Book an appointment
+          {/* WhatsApp Icon Link Element */}
+          <div className="shrink-0 flex items-center">
+            <a
+              href="https://wa.me/qr/QR33UE3YBU3WL1"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center p-2.5 rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#06B6D4] shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:bg-[#06B6D4] hover:text-[#0F172A] transition-all transform hover:-translate-y-0.5"
+              aria-label="Contact on WhatsApp"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-6 h-6"
+              >
+                <path d="M12.004 2c-5.518 0-10 4.482-10 10 0 1.765.459 3.424 1.259 4.88l-1.332 4.869 4.983-1.307c1.402.77 3.003 1.208 4.706 1.208 5.518 0 10-4.482 10-10s-4.482-10-10-10zm0 1.667c4.6 0 8.333 3.733 8.333 8.333s-3.733 8.333-8.333 8.333c-1.492 0-2.884-.392-4.108-1.075l-.292-.167-3.042.8 1.042-3.008-.183-.3c-.767-1.258-1.208-2.733-1.208-4.308 0-4.6 3.733-8.333 8.333-8.333zm-2.458 4.25c-.2 0-.392.05-.534.192-.283.292-.742.875-.742 2.125s.908 2.458 1.034 2.625c.125.167 1.758 2.683 4.292 3.683.6.242 1.075.392 1.442.508.608.192 1.15.167 1.583.1.483-.075 1.483-.608 1.692-1.2s.208-1.1.15-1.2c-.058-.1-.233-.158-.5-.292-.267-.133-1.583-.783-1.833-.875-.25-.092-.433-.133-.617.142-.183.267-.708.875-.867 1.058-.158.183-.325.208-.592.075-.267-.133-1.133-.417-2.158-1.333-.8-.708-1.333-1.592-1.492-1.858-.158-.267-.017-.408.117-.542.125-.117.267-.308.4-.467.133-.158.175-.267.267-.442.092-.175.05-.333-.025-.467-.075-.133-.617-1.492-.85-2.042-.217-.542-.458-.458-.617-.467-.15-.008-.325-.008-.5-.008z" />
+              </svg>
             </a>
           </div>
+
         </div>
       </header>
 
