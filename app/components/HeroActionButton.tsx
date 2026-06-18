@@ -1,51 +1,26 @@
-'use client';
+{/* Header Navigation */ }
+<header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/80 border-b border-white/10 z-[300] flex items-center">
+    <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center w-full relative z-10 gap-4">
 
-import React, { useState, useEffect } from 'react';
-
-export default function HeroActionButton() {
-    const [isMobileVideoActive, setIsMobileVideoActive] = useState(false);
-
-    useEffect(() => {
-        // Mobile strict 3-second delay configuration logic
-        const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
-        if (isMobile) {
-            const delayTimer = setTimeout(() => {
-                setIsMobileVideoActive(true);
-            }, 3000);
-            return () => clearTimeout(delayTimer);
-        }
-    }, []);
-
-    return (
-        <a
-            href="https://wa.me/qr/QR33UE3YBU3WL1"
-            target="_blank"
-            rel="noreferrer"
-            className="relative inline-flex items-center justify-center min-h-[60px] w-full max-w-sm mx-auto group cursor-pointer"
-        >
-            {/* 1. Base State: Static CTA Button (Visible by default, hidden on desktop hover, hidden on mobile after 3s) */}
-            <div
-                className={`inline-flex items-center justify-center w-full px-8 py-4 text-base font-semibold rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] group-hover:md:opacity-0 group-hover:md:scale-95 transition-all duration-500 ${isMobileVideoActive ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
-                    }`}
-            >
-                Automate Your Operations
-            </div>
-
-            {/* 2. Video Overlay: Triggers automatically on mobile delay OR instantly on desktop group-hover */}
-            <div
-                className={`absolute inset-0 w-full h-full rounded-lg overflow-hidden border border-[#06B6D4]/30 shadow-[0_0_25px_rgba(6,182,212,0.15)] md:opacity-0 md:scale-95 group-hover:md:opacity-100 group-hover:md:scale-100 transition-all duration-500 ${isMobileVideoActive ? 'opacity-100 scale-100' : 'pointer-events-none'
-                    }`}
-            >
-                <video
-                    src="/videos/automate-preview.mp4"
-                    className="w-full h-full object-cover"
-                    muted
-                    playsInline
-                    loop
-                    autoPlay
-                />
-            </div>
+        {/* Simplified Logo Container */}
+        <a href="#home" className="h-full flex items-center">
+            <img
+                src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0"
+                alt="Turbolucent Logo"
+                style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
+            />
         </a>
-    );
-}
+
+        {/* Navigation Items Link Matrix */}
+        <nav className="hidden md:flex gap-8 text-[0.9rem] font-medium text-[#F8FAFC]/70">
+            <a href="#comparison" className="hover:text-[#F8FAFC] transition-colors">ROI</a>
+            <a href="#what-we-do" className="hover:text-[#F8FAFC] transition-colors">Capabilities</a>
+            <a href="#showcase" className="hover:text-[#F8FAFC] transition-colors">Case Studies</a>
+            <a href="#platform" className="hover:text-[#F8FAFC] transition-colors">Platform</a>
+            <a href="#architecture" className="hover:text-[#F8FAFC] transition-colors">Architecture</a>
+            <a href="#blogs" className="hover:text-[#F8FAFC] transition-colors">Blogs</a>
+        </nav>
+
+        {/* ... rest of your header items ... */}
+    </div>
+</header>

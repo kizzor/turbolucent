@@ -1,6 +1,22 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
+  // Added state to fix ReferenceError and manage mobile overlay transition
+  const [isMobileVideoActive, setIsMobileVideoActive] = useState(false);
+
+  useEffect(() => {
+    // Trigger video reveal after 3 seconds on mobile devices
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile) {
+      const delayTimer = setTimeout(() => {
+        setIsMobileVideoActive(true);
+      }, 3000);
+      return () => clearTimeout(delayTimer);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#0F172A] text-[#F8FAFC] font-sans antialiased relative overflow-x-hidden pt-[80px]">
       {/* Decorative Orbs */}
@@ -11,7 +27,7 @@ export default function Home() {
       <header className="fixed top-0 left-0 w-full h-[80px] bg-[#0F172A]/60 backdrop-blur-md border-b border-white/10 z-[300] flex items-center">
         <div className="max-w-[1200px] mx-auto px-4 md:px-8 flex justify-between items-center w-full relative z-10 gap-4">
 
-          {/* Logo element Area */}
+          {/* Logo Element Area - Enhanced scaling limits to prevent tiny sizes */}
           <a href="#home" className="h-[80px] w-[240px] flex items-center justify-center overflow-hidden shrink-0">
             <img
               src="https://labs.google.com/pomelli_downloads/websites/90MDYs0lXoL4vts7yp_4q3/resources/aK3Lf547gmMcmqfL91w_iZ?authuser=0"
@@ -65,9 +81,40 @@ export default function Home() {
               <span className="bg-gradient-to-r from-[#67E8F9] to-[#06B6D4] bg-clip-text text-transparent">Your Business,</span> Professionalized.
             </h1>
             <p className="text-xl text-[#F8FAFC]/70 max-w-xl mx-auto mb-10">From WhatsApp DMs to a High-Performance Storefront.</p>
-            <a href="https://t.me/c/2345641452/954" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-lg border border-[#06B6D4] bg-[#06B6D4]/5 text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] hover:bg-[#06B6D4] hover:text-[#0F172A] transition-all">
-              Automate Your Operations
-            </a>
+
+            {/* Extended Height Interactive Video Workspace Container */}
+            <div className="relative inline-flex items-center justify-center h-[120px] w-full max-w-sm mx-auto group">
+              {/* Underlying Video Loop Linked Module */}
+              <a
+                href="https://wa.me/qr/QR33UE3YBU3WL1"
+                target="_blank"
+                rel="noreferrer"
+                className="absolute inset-0 w-full h-full rounded-lg overflow-hidden border border-[#06B6D4]/30 shadow-[0_0_25px_rgba(6,182,212,0.15)] z-10 block"
+              >
+                <video
+                  src="/videos/automate-preview.mp4"
+                  className="w-full h-full object-cover"
+                  muted={true}
+                  playsInline={true}
+                  loop={true}
+                  autoPlay={true}
+                />
+              </a>
+
+              {/* Foreground Overlay Trigger Card - Organized into Three Lines */}
+              <a
+                href="https://wa.me/qr/QR33UE3YBU3WL1"
+                target="_blank"
+                rel="noreferrer"
+                className={`absolute inset-0 z-20 flex flex-col items-center justify-center w-full h-full px-8 py-4 text-lg font-bold border border-[#06B6D4] bg-[#0F172A] text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] transition-all duration-500 rounded-lg group-hover:opacity-0 group-hover:scale-95 leading-relaxed tracking-wide ${isMobileVideoActive ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
+                  }`}
+              >
+                <span>Automate</span>
+                <span>Your</span>
+                <span>Operations</span>
+              </a>
+            </div>
+
           </div>
         </section>
 
