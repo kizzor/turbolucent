@@ -83,7 +83,7 @@ export default function Home() {
             <p className="text-xl text-[#F8FAFC]/70 max-w-xl mx-auto mb-10">From WhatsApp DMs to a High-Performance Storefront.</p>
 
             {/* Extended Height Interactive Video Workspace Container */}
-            <div className="relative inline-flex items-center justify-center h-[180px] w-full max-w-sm mx-auto group">
+            <div className="relative inline-flex items-center justify-center h-[198px] w-full max-w-sm mx-auto group">
               {/* Underlying Video Loop Linked Module */}
               <a
                 href="https://wa.me/qr/QR33UE3YBU3WL1"
@@ -106,7 +106,7 @@ export default function Home() {
                 href="https://wa.me/qr/QR33UE3YBU3WL1"
                 target="_blank"
                 rel="noreferrer"
-                className={`absolute inset-0 z-20 flex flex-col items-center justify-center w-full h-full px-8 py-4 text-lg font-bold border border-[#06B6D4] bg-[#0F172A] text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] transition-all duration-500 rounded-lg group-hover:opacity-0 group-hover:scale-95 leading-relaxed tracking-wide ${isMobileVideoActive ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
+                className={`absolute inset-0 z-20 flex flex-col items-center justify-center w-full h-full px-8 py-4 text-xl font-bold border border-[#06B6D4] bg-[#0F172A] text-[#F8FAFC] shadow-[0_0_15px_rgba(6,182,212,0.2)] transition-all duration-500 rounded-lg group-hover:opacity-0 group-hover:scale-95 leading-relaxed tracking-wide ${isMobileVideoActive ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'
                   }`}
               >
                 <span>Automate</span>
