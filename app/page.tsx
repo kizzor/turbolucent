@@ -83,7 +83,7 @@ export default function Home() {
             <p className="text-xl text-[#F8FAFC]/70 max-w-xl mx-auto mb-10">From WhatsApp DMs to a High-Performance Storefront.</p>
 
             {/* Extended Height Interactive Video Workspace Container */}
-            <div className="relative inline-flex items-center justify-center h-[120px] w-full max-w-sm mx-auto group">
+            <div className="relative inline-flex items-center justify-center h-[180px] w-full max-w-sm mx-auto group">
               {/* Underlying Video Loop Linked Module */}
               <a
                 href="https://wa.me/qr/QR33UE3YBU3WL1"
